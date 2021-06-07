@@ -8,9 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		41F205CC266EC3BE00692B21 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F205CB266EC3BE00692B21 /* AppDelegate.swift */; };
-		41F205CE266EC3BE00692B21 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F205CD266EC3BE00692B21 /* SceneDelegate.swift */; };
 		41F205D0266EC3BE00692B21 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F205CF266EC3BE00692B21 /* ViewController.swift */; };
-		41F205D3266EC3BE00692B21 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F205D1266EC3BE00692B21 /* Main.storyboard */; };
 		41F205D5266EC3C100692B21 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F205D4266EC3C100692B21 /* Assets.xcassets */; };
 		41F205D8266EC3C100692B21 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41F205D6266EC3C100692B21 /* LaunchScreen.storyboard */; };
 		41F205E3266EC3C200692B21 /* MVVM_CTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F205E2266EC3C200692B21 /* MVVM_CTests.swift */; };
@@ -37,9 +35,7 @@
 /* Begin PBXFileReference section */
 		41F205C8266EC3BE00692B21 /* MVVM-C.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MVVM-C.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F205CB266EC3BE00692B21 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		41F205CD266EC3BE00692B21 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		41F205CF266EC3BE00692B21 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		41F205D2266EC3BE00692B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		41F205D4266EC3C100692B21 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41F205D7266EC3C100692B21 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		41F205D9266EC3C100692B21 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,10 +95,9 @@
 		41F205CA266EC3BE00692B21 /* MVVM-C */ = {
 			isa = PBXGroup;
 			children = (
+				41F20607266EC4C700692B21 /* Login */,
 				41F205CB266EC3BE00692B21 /* AppDelegate.swift */,
-				41F205CD266EC3BE00692B21 /* SceneDelegate.swift */,
 				41F205CF266EC3BE00692B21 /* ViewController.swift */,
-				41F205D1266EC3BE00692B21 /* Main.storyboard */,
 				41F205D4266EC3C100692B21 /* Assets.xcassets */,
 				41F205D6266EC3C100692B21 /* LaunchScreen.storyboard */,
 				41F205D9266EC3C100692B21 /* Info.plist */,
@@ -126,6 +121,13 @@
 				41F205EF266EC3C200692B21 /* Info.plist */,
 			);
 			path = "MVVM-CUITests";
+			sourceTree = "<group>";
+		};
+		41F20607266EC4C700692B21 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +235,6 @@
 			files = (
 				41F205D8266EC3C100692B21 /* LaunchScreen.storyboard in Resources */,
 				41F205D5266EC3C100692B21 /* Assets.xcassets in Resources */,
-				41F205D3266EC3BE00692B21 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,7 +261,6 @@
 			files = (
 				41F205D0266EC3BE00692B21 /* ViewController.swift in Sources */,
 				41F205CC266EC3BE00692B21 /* AppDelegate.swift in Sources */,
-				41F205CE266EC3BE00692B21 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,14 +296,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		41F205D1266EC3BE00692B21 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				41F205D2266EC3BE00692B21 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		41F205D6266EC3C100692B21 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -366,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -421,7 +413,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
